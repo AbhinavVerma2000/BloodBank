@@ -2,7 +2,7 @@ import axios from "axios";
 export const axiosInstance = async ( method, endpoint, payload ) => {
   try {
     const response = await axios({
-      baseURL:"https://blood-bank-77pn.vercel.app/",
+      baseURL: process.env.REACT_APP_BACK,
       method,
       url: endpoint,
       data: payload,
