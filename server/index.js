@@ -3,7 +3,11 @@ const cors = require('cors')
 const app = express()
 const port = process.env.PORT || 5000;
 const dbconfig = require('./dbconfig')
-app.use(cors())
+app.use(cors(
+    {
+        origin: 'https://blood-bank-seven-weld.vercel.app/'
+    }
+))
 app.use(express.json())
 const usersRoute = require('./routes/usersRoute')
 const invRoute = require('./routes/invRoute')
