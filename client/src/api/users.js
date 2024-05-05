@@ -1,7 +1,7 @@
 import { axiosInstance } from ".";
 
 export const login = async (payload) => {
-  const response = await axiosInstance("post",`${process.env.REACT_APP_BACK}/api/users/login`, payload)
+  const response = await axiosInstance("post",`/api/users/login`, payload)
   console.log(process.env.REACT_APP_BACK)
   return response
 };
