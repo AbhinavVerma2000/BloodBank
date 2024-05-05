@@ -5,7 +5,9 @@ export const axiosInstance = async ( method, endpoint, payload ) => {
       method,
       url: endpoint,
       data: payload,
+      adapter:["xhr","http","https"],
       headers: { authorization: `Bearer ${localStorage.getItem("token")}` },
+      httpsAgent:{origin: ''}
     });
     return response.data;
   } catch (error) {
