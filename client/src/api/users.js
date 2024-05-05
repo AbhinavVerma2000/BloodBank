@@ -6,16 +6,16 @@ export const login = async (payload) => {
   return response
 };
 export const signup = async (payload) => {
-  const response = await axiosInstance("post",`${process.env.REACT_APP_BACK}/api/users/register`, payload)
+  const response = await axiosInstance("post",`/api/users/register`, payload)
   return response
 };
 export const getUserinfo = async () =>{
-    const response = await axiosInstance("get",`${process.env.REACT_APP_BACK}/api/users/getuserinfo`)
+    const response = await axiosInstance("get",`/api/users/getuserinfo`)
     return response
 }
 export const GetAllOrgDonor = ()=>{
-  return axiosInstance('get',`${process.env.REACT_APP_BACK}/api/users/getallorgdonor`)
+  return axiosInstance('get',`/api/users/getallorgdonor`)
 }
 export const GetAllOrgHos = ()=>{
-  return axiosInstance('get',`${process.env.REACT_APP_BACK}/api/users/getallorghospital`)
+  return axiosInstance('get',`/api/users/getallorghospital`)
 }
