@@ -7,8 +7,11 @@ export const axiosInstance = async ( method, endpoint, payload ) => {
       data: payload,
       adapter:["xhr","http","https"],
       headers: { authorization: `Bearer ${localStorage.getItem("token")}` },
-      httpsAgent:{origin: 'https://blood-bank-77pn.vercel.app'}
-    });
+      proxy:{
+        protocol: 'https',
+    host: 'blood-bank-77pn.vercel.app',
+    }
+  });
     return response.data;
   } catch (error) {
     return error;
