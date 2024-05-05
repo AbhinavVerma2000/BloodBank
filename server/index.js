@@ -4,14 +4,6 @@ const app = express()
 const port = process.env.PORT || 5000;
 const dbconfig = require('./dbconfig')
 app.use(cors())
-app.use((req, res, next) => {
-    res.set({
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "*",
-    });
-
-    next();
-});
 app.use(express.json())
 const usersRoute = require('./routes/usersRoute')
 const invRoute = require('./routes/invRoute')
