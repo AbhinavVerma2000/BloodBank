@@ -6,8 +6,7 @@
   "scripts": {
     "build":"cd server && npm install && cd ../client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js",
-    "dev":"cd client && npm start"
+    "start": "nodemon server/server.js"
   },
   "author": "",
   "license": "ISC",
