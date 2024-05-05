@@ -45,6 +45,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
-  },
-  "proxy": "https://blood-bank-77pn.vercel.app/"
+  }
 }
