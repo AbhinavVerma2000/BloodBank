@@ -18,7 +18,6 @@ const Signup = () => {
       const response = await signup({...values,type})
       dispatch(Setloading(false))
       if (response.success) {
-        console.log(values)
         message.success(response.message)
         navigate('/')
       } else {
