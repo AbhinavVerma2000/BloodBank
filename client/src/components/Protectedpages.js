@@ -45,7 +45,7 @@ function Protectedpages({ children }) {
     currentUser && (
       <div>
         <header className="flex justify-between items-center bg-primary text-white px-5">
-          <h1 onClick={()=>navigate('/')} className="text-2xl cursor-pointer">Bloody Mary Bloodbank</h1>
+          <h1 onClick={()=>navigate('/')} className="text-2xl cursor-pointer">HemoHub Bloodbank</h1>
           <div className="flex items-center">
           <i className="ri-shield-user-line text-2xl"></i>
           <div className="flex flex-col">
