@@ -20,7 +20,6 @@ const Home = () => {
       const response = await Getbloodgrpdata()
       dispatch(Setloading(false))
       if (response.success) {
-        console.log(response.data)
         setBldgrpdata(response.data)
       } else {
         throw new Error(response.message)
