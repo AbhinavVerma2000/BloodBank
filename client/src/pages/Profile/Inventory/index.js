@@ -27,10 +27,8 @@ const Inventory = () => {
       dataIndex: "reference",
       render: (text, record)=>{
         if (record.inventorytype==='in') {
-          console.log(record)
           return record.donor.name
         } else {
-          console.log(record)
           return record.hospital.hospitalName
         }
       }
