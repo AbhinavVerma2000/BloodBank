@@ -44,9 +44,9 @@ function Protectedpages({ children }) {
   return (
     currentUser && (
       <div>
-        <header className="flex justify-between items-center bg-primary text-white px-5">
-          <h1 onClick={()=>navigate('/')} className="text-2xl cursor-pointer">HemoHub Bloodbank</h1>
-          <div className="flex items-center">
+        <header className="flex justify-between items-center bg-primary text-white w-full">
+          <p onClick={()=>navigate('/')} className="font-bold cursor-pointer pl-5">HemoHub Bloodbank</p>
+          <div className="flex items-center pr-5">
           <i className="ri-shield-user-line text-2xl"></i>
           <div className="flex flex-col">
             <span className="mr-5 text-md cursor-pointer" onClick={()=>navigate('/profile')}>{GetUserName()}</span>
