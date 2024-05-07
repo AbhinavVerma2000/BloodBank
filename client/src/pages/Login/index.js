@@ -33,7 +33,7 @@ const Login = () => {
     }
   },[navigate])
   return (
-    <div className="bg-primary flex h-full items-center justify-center">
+    <div className="bg-primary flex h-screen items-center justify-center">
       <Form
         layout="vertical"
         className="bg-white lg:w-1/3 sm:w-1/2 shadow rounded p-5 gap-5 w-screen grid"
