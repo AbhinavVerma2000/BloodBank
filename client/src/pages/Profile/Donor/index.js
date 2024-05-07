@@ -34,7 +34,7 @@ const Donor = () => {
         title: "Phone",
         dataIndex: "phone"
     },{
-        title: "Created At",
+        title: "Date",
         dataIndex: "createdAt",
         render: (date)=>moment(date).format('DD MMM YYYY hh:mm A')
     }]
