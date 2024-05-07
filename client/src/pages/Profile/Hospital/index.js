@@ -38,7 +38,7 @@ const Hospital = () => {
         title: "Address",
         dataIndex: "address"
     },{
-        title: "Created At",
+        title: "Date",
         dataIndex: "createdAt",
         render: (date)=>moment(date).format('DD MMM YYYY hh:mm A')
     }]
