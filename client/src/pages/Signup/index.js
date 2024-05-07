@@ -29,10 +29,10 @@ const Signup = () => {
     }
   }
   return (
-    <div className="bg-primary flex h-screen items-center justify-center">
+    <div className="bg-primary flex h-full items-center justify-center">
       <Form
         layout="vertical"
-        className="bg-white shadow rounded grid grid-cols-2 p-5 gap-5 w-1/2" onFinish={onFinish}
+        className="bg-white shadow rounded grid grid-cols-2 p-5 gap-5 md:w-1/2 w-screen" onFinish={onFinish}
       >
         <h1 className="col-span-2 uppercase">
           <span className="text-primary">{type} - Registration</span>
