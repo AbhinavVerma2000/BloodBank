@@ -43,7 +43,7 @@ function Protectedpages({ children }) {
   };
   return (
     currentUser && (
-      <div>
+      <div className="w-screen h-screen">
         <header className="flex justify-between items-center bg-primary text-white w-full">
           <p onClick={()=>navigate('/')} className="font-bold cursor-pointer pl-5">HemoHub Bloodbank</p>
           <div className="flex items-center pr-5">
