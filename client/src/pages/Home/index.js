@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div>
       <span className="text-primary text-2xl">Welcome {GetUserName()}</span>
-      {currentUser.type==='organization' && <div className="grid grid-cols-4 gap-5 mt-5">{bldgrpdata.map((bloodgrp, index)=>{
+      {currentUser.type==='organization' && <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-5 mt-5">{bldgrpdata.map((bloodgrp, index)=>{
         return <div key={index} style={{backgroundColor: colors[index]}} className="p-5 flex justify-between text-white rounded items-center">
           <h1 className='text-5xl'>{bloodgrp.bloodgrp}</h1>
           <div className='flex flex-col justify-between gap-2'>
